@@ -1,0 +1,27 @@
+{
+  "name": "contacts-sync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cross-account contact synchronization web app supporting Gmail, Outlook, and iCloud",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w server && npm run build -w client",
+    "lint": "npm run lint -w server && npm run lint -w client",
+    "test": "npm run test -w server && npm run test -w client"
+  },
+  "keywords": [
+    "contacts",
+    "sync",
+    "gmail",
+    "outlook",
+    "icloud"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
