@@ -9,6 +9,7 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "lint": "eslint 'src/**/*.ts'",
+    "migrate": "node-pg-migrate up --database-url-var DATABASE_URL --migrations-dir migrations",
     "test": "jest"
   },
   "dependencies": {
@@ -31,6 +32,7 @@
     "@types/node": "^20.14.9",
     "@types/pg": "^8.11.6",
     "jest": "^29.7.0",
+    "node-pg-migrate": "^8.0.4",
     "ts-jest": "^29.2.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.5.3"
