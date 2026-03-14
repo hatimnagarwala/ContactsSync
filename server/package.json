@@ -10,6 +10,7 @@
     "start": "node dist/index.js",
     "lint": "eslint 'src/**/*.ts'",
     "migrate": "node-pg-migrate up --database-url-var DATABASE_URL --migrations-dir migrations",
+    "migrate:down": "node-pg-migrate down --database-url-var DATABASE_URL --migrations-dir migrations",
     "test": "jest"
   },
   "dependencies": {
