@@ -14,7 +14,8 @@
     "test": "npm run test -w server && npm run test -w client",
     "test:server": "npm run test -w server",
     "test:client": "npm run test -w client",
-    "migrate": "npm run migrate -w server"
+    "migrate": "npm run migrate -w server",
+    "migrate:down": "npm run migrate:down -w server"
   },
   "keywords": [
     "contacts",
